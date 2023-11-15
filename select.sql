@@ -41,3 +41,9 @@ SELECT aluno.nome AS "Aluno",
   JOIN aluno_curso ON aluno_curso.aluno_id = aluno.id
   JOIN curso ON aluno_curso.curso_id = curso.id
   ORDER BY aluno.nome;
+
+/* o OFFSET é utilizado para criar paginação nos dados */
+SELECT *
+	FROM aluno
+   LIMIT 5
+  OFFSET 5;
