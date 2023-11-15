@@ -4,9 +4,13 @@ CREATE TABLE aluno_curso(
 	aluno_id UUID,
 	curso_id INTEGER,
 	PRIMARY KEY (aluno_id, curso_id),
-	FOREIGN KEY (aluno_id) REFERENCES aluno(id),
+	FOREIGN KEY (aluno_id)
+		REFERENCES aluno(id)
+		ON DELETE CASCADE,
 	FOREIGN KEY (curso_id) REFERENCES curso(id)
 );
+
+DELETE FROM aluno WHERE id = '46eaca0e-01fb-4d58-abf3-ce12246135f1';
 
 SELECT * FROM aluno_curso;
 SELECT * FROM aluno;
@@ -16,6 +20,6 @@ INSERT INTO aluno_curso (
 	aluno_id,
 	curso_id
 ) VALUES (
-	'b5b096c5-93ba-4ae0-8899-a60f4b98feb9',
-	3
+	'46eaca0e-01fb-4d58-abf3-ce12246135f1',
+	1
 );
