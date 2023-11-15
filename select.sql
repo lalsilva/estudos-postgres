@@ -8,3 +8,7 @@ SELECT
 	data_nascimento AS "Data de Nascimento"
 FROM
 	aluno;
+	
+SELECT *
+	FROM aluno
+   WHERE nome LIKE 'L_is Silva';
