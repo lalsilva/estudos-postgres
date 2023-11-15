@@ -11,4 +11,4 @@ FROM
 	
 SELECT *
 	FROM aluno
-   WHERE nome LIKE 'L_is Silva';
+   WHERE nome LIKE 'L_is%';
