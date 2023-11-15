@@ -47,3 +47,10 @@ SELECT *
 	FROM aluno
    LIMIT 5
   OFFSET 5;
+
+SELECT COUNT(matricula),
+	   SUM(matricula),
+	   MAX(matricula),
+	   MIN(matricula),
+	   ROUND(AVG(matricula), 0)
+	FROM aluno;
