@@ -12,3 +12,5 @@ CREATE TABLE aluno(
 );
 
 SELECT * FROM aluno;
+
+ALTER TABLE aluno ADD PRIMARY KEY (id);
