@@ -12,6 +12,6 @@ INSERT INTO curso (
 	id,
 	nome
 ) VALUES (
-	1,
-	'CSS'
+	3,
+	'Javascript'
 );
