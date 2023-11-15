@@ -17,5 +17,5 @@ INSERT INTO aluno_curso (
 	curso_id
 ) VALUES (
 	'b5b096c5-93ba-4ae0-8899-a60f4b98feb9',
-	1
+	3
 );
