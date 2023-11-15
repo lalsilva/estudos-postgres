@@ -16,3 +16,11 @@ FROM
 SELECT *
 	FROM aluno
    WHERE nome LIKE '%Antônio';
+
+SELECT *
+	FROM aluno
+   WHERE cpf IS NOT NULL;
+   
+SELECT *
+	FROM aluno
+   WHERE matricula BETWEEN 2 AND 4;
