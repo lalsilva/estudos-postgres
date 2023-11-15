@@ -24,3 +24,11 @@ SELECT *
 SELECT *
 	FROM aluno
    WHERE matricula BETWEEN 2 AND 4;
+   
+SELECT *
+	FROM aluno
+   WHERE (
+	   nome LIKE 'L%'
+       OR nome LIKE 'S%'
+	 )
+     AND matricula BETWEEN 2 AND 5;
